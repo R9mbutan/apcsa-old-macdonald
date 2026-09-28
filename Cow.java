@@ -1,12 +1,9 @@
 public class Cow extends Animal {
 
-    public Cow(String string, String string2) {
-        //TODO Auto-generated constructor stub
+    public Cow() {
+        super("mooooooooooooooooooooo", "cow");
     }
-
-    @Override 
-    public String getSound() {
-        return "mooooooooooooooooooooo";
+    public Cow(String sound, String type){
+        super(sound,type);
     }
-    
 }
