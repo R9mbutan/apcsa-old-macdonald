@@ -7,7 +7,7 @@ public class Animal {
     public String getType() {
         return myType;
     }
-    public Animal(String sound, String type) {
+    public Animal(String type, String sound) {
         mySound = sound;
         myType = type;
     }

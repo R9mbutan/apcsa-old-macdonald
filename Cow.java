@@ -1,9 +1,9 @@
 public class Cow extends Animal {
 
     public Cow() {
-        super("mooooooooooooooooooooo", "cow");
+        super("cow", "moo");
     }
-    public Cow(String sound, String type){
-        super(sound,type);
+    public Cow(String type, String sound){
+        super(type, sound);
     }
 }

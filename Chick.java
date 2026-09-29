@@ -1,12 +1,9 @@
 public class Chick extends Animal {
-
-    public Chick(String string, String string2) {
-        //TODO Auto-generated constructor stub
+    public Chick() {
+        super("chick", (Math.random()>0.5) ? "cluck" : "cheep");
     }
 
-    @Override 
-    public String getSound() {
-        if (Math.random()>0.5) return "cluck";
-        else return "";
+    public Chick(String type, String sound){
+        super(type, sound);
     }
 }

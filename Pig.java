@@ -1,8 +1,8 @@
 public class Pig extends Animal {
-
-    public Pig(String sound, String type) {
-        getSound(sound);
-        getType(type);
+    public Pig() {
+        super("pig","oink");
     }
-    
+    public Pig(String type, String sound){
+        super(type, sound);
+    }
 }
