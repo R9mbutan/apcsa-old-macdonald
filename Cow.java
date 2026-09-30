@@ -1,9 +1,21 @@
-public class Cow extends Animal {
+public class Cow implements Animal {
+    private String mySound;
+    private String myType;
 
     public Cow() {
-        super("cow", "moo");
+        mySound = getSound();
+        myType = getType();
     }
-    public Cow(String type, String sound){
-        super(type, sound);
+
+    public String getSound(){
+        return "moo";
+    }
+    public String getType(){
+        return "cow";
+    }
+
+    public Cow(String type, String sound) {
+        myType = type;
+        mySound = sound;
     }
 }
